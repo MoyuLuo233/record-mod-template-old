@@ -1,0 +1,12 @@
+{
+  "countdown": {
+    "sounds": [
+      "record-mod:countdown"
+    ]
+  },
+  "sunset": {
+    "sounds": [
+      "record-mod:sunset"
+    ]
+  }
+}
