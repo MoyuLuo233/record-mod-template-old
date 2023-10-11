@@ -5,6 +5,7 @@ import name.record_mod.registry.ModItems;
 import name.record_mod.registry.Sounds;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;

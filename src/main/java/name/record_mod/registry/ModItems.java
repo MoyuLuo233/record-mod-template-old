@@ -5,15 +5,24 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.MusicDiscItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.SoundEvent;
 import net.minecraft.util.Identifier;
+
+import java.util.Set;
 
 public class ModItems {
     public static final Item COUNTDOWN = registerItem("countdown",
             new Item(new FabricItemSettings()));
     public static final Item HALFCOUNTDOWN = registerItem("haft_countdown",
             new Item(new FabricItemSettings()));
+
+    public static final Item COUNTDOWN_MUSICDISC = registerItem("countdown",
+            new MusicDiscItem(6, Sounds.COUNTDOWN_EVENT, new FabricItemSettings().maxCount(1),16));
+
+
     public static Item registerItem(String name, Item item, ItemGroup... itemGroups) {
         Item registeredItem = Registry.register(Registries.ITEM, new Identifier(RecordMod.MOD_ID,name), item);
         for (ItemGroup itemGroup: itemGroups){
