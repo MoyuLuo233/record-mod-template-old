@@ -2,7 +2,6 @@ package name.record_mod;
 
 import name.record_mod.mixin.ExampleMixin;
 import name.record_mod.registry.ModItems;
-import name.record_mod.registry.Sounds;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.item.Item;

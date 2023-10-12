@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "record-mod:item/haft_countdown"
+    "layer0": "record-mod:item/sunset"
   }
 
 }

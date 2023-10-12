@@ -1,6 +1,7 @@
 package name.record_mod.registry;
 
 import name.record_mod.RecordMod;
+import name.record_mod.sound.ModSound;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -15,12 +16,10 @@ import java.util.Set;
 
 public class ModItems {
     public static final Item COUNTDOWN = registerItem("countdown",
-            new Item(new FabricItemSettings()));
-    public static final Item HALFCOUNTDOWN = registerItem("haft_countdown",
-            new Item(new FabricItemSettings()));
+            new MusicDiscItem(6, ModSound.COUNTDOWN, new FabricItemSettings().maxCount(1),16));
 
-    public static final Item COUNTDOWN_MUSICDISC = registerItem("countdown",
-            new MusicDiscItem(6, Sounds.COUNTDOWN_EVENT, new FabricItemSettings().maxCount(1),16));
+    public static final Item SUNSET = registerItem("sunset",
+            new MusicDiscItem(6, ModSound.SUNSET, new FabricItemSettings().maxCount(1),16));
 
 
     public static Item registerItem(String name, Item item, ItemGroup... itemGroups) {

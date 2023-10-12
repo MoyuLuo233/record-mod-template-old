@@ -1,12 +1,18 @@
 {
   "countdown": {
     "sounds": [
-      "record-mod:countdown"
+      {
+        "name":"record-mod:countdown",
+        "stream": true
+      }
     ]
   },
   "sunset": {
     "sounds": [
-      "record-mod:sunset"
+      {
+        "name":"record-mod:sunset",
+        "stream": true
+      }
     ]
   }
 }
