@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import util.ModLootTableModifiers;
 
 public class RecordMod implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -23,7 +24,7 @@ public class RecordMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModLootTableModifiers.modifyLootTables();
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItem();
 	}
